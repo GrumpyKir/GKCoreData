@@ -12,6 +12,7 @@
 		ED2E8A302260A9B500E44849 /* LocalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E8A2F2260A9B500E44849 /* LocalFactory.swift */; };
 		ED2E8A322260A9BE00E44849 /* LocalMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E8A312260A9BE00E44849 /* LocalMappable.swift */; };
 		ED2E8A342260A9C800E44849 /* LocalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E8A332260A9C800E44849 /* LocalWorker.swift */; };
+		ED2E8A512260B73D00E44849 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2E8A502260B73D00E44849 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ED2E8A2F2260A9B500E44849 /* LocalFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFactory.swift; sourceTree = "<group>"; };
 		ED2E8A312260A9BE00E44849 /* LocalMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMappable.swift; sourceTree = "<group>"; };
 		ED2E8A332260A9C800E44849 /* LocalWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalWorker.swift; sourceTree = "<group>"; };
+		ED2E8A502260B73D00E44849 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2E8A512260B73D00E44849 /* CoreData.framework in Frameworks */,
 				719B85DA1FDE2444CA97F37F /* libPods-GKCoreData.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +44,7 @@
 		61A30999F890C725984419C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED2E8A502260B73D00E44849 /* CoreData.framework */,
 				46C84CEC048EA3F44B1AD7FB /* libPods-GKCoreData.a */,
 			);
 			name = Frameworks;
