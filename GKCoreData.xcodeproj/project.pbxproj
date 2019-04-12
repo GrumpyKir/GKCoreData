@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		719B85DA1FDE2444CA97F37F /* libPods-GKCoreData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C84CEC048EA3F44B1AD7FB /* libPods-GKCoreData.a */; };
 		ED2E8A272260A5EB00E44849 /* GKCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = ED2E8A252260A5EB00E44849 /* GKCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED2E8A302260A9B500E44849 /* LocalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E8A2F2260A9B500E44849 /* LocalFactory.swift */; };
+		ED2E8A322260A9BE00E44849 /* LocalMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E8A312260A9BE00E44849 /* LocalMappable.swift */; };
+		ED2E8A342260A9C800E44849 /* LocalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E8A332260A9C800E44849 /* LocalWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46C84CEC048EA3F44B1AD7FB /* libPods-GKCoreData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GKCoreData.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C487890B2892FFEE1C86ECF /* Pods-GKCoreData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKCoreData.release.xcconfig"; path = "Target Support Files/Pods-GKCoreData/Pods-GKCoreData.release.xcconfig"; sourceTree = "<group>"; };
+		C8C5932C936D0BE70E4BECD0 /* Pods-GKCoreData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKCoreData.debug.xcconfig"; path = "Target Support Files/Pods-GKCoreData/Pods-GKCoreData.debug.xcconfig"; sourceTree = "<group>"; };
 		ED2E8A222260A5EB00E44849 /* GKCoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GKCoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2E8A252260A5EB00E44849 /* GKCoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKCoreData.h; sourceTree = "<group>"; };
 		ED2E8A262260A5EB00E44849 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2E8A2F2260A9B500E44849 /* LocalFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFactory.swift; sourceTree = "<group>"; };
+		ED2E8A312260A9BE00E44849 /* LocalMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalMappable.swift; sourceTree = "<group>"; };
+		ED2E8A332260A9C800E44849 /* LocalWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				719B85DA1FDE2444CA97F37F /* libPods-GKCoreData.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61A30999F890C725984419C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46C84CEC048EA3F44B1AD7FB /* libPods-GKCoreData.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B809425B3197047A33A19BEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8C5932C936D0BE70E4BECD0 /* Pods-GKCoreData.debug.xcconfig */,
+				4C487890B2892FFEE1C86ECF /* Pods-GKCoreData.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ED2E8A182260A5EB00E44849 = {
 			isa = PBXGroup;
 			children = (
 				ED2E8A242260A5EB00E44849 /* GKCoreData */,
 				ED2E8A232260A5EB00E44849 /* Products */,
+				B809425B3197047A33A19BEC /* Pods */,
+				61A30999F890C725984419C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +78,19 @@
 			children = (
 				ED2E8A252260A5EB00E44849 /* GKCoreData.h */,
 				ED2E8A262260A5EB00E44849 /* Info.plist */,
+				ED2E8A2D2260A91600E44849 /* SourceData */,
 			);
 			path = GKCoreData;
+			sourceTree = "<group>";
+		};
+		ED2E8A2D2260A91600E44849 /* SourceData */ = {
+			isa = PBXGroup;
+			children = (
+				ED2E8A2F2260A9B500E44849 /* LocalFactory.swift */,
+				ED2E8A312260A9BE00E44849 /* LocalMappable.swift */,
+				ED2E8A332260A9C800E44849 /* LocalWorker.swift */,
+			);
+			path = SourceData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +111,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED2E8A2A2260A5EB00E44849 /* Build configuration list for PBXNativeTarget "GKCoreData" */;
 			buildPhases = (
+				E937548CC634377986355C9F /* [CP] Check Pods Manifest.lock */,
 				ED2E8A1D2260A5EB00E44849 /* Headers */,
 				ED2E8A1E2260A5EB00E44849 /* Sources */,
 				ED2E8A1F2260A5EB00E44849 /* Frameworks */,
 				ED2E8A202260A5EB00E44849 /* Resources */,
+				ED2E8A2E2260A91F00E44849 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -95,6 +138,7 @@
 				TargetAttributes = {
 					ED2E8A212260A5EB00E44849 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -125,11 +169,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E937548CC634377986355C9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GKCoreData-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED2E8A2E2260A91F00E44849 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED2E8A1E2260A5EB00E44849 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2E8A302260A9B500E44849 /* LocalFactory.swift in Sources */,
+				ED2E8A322260A9BE00E44849 /* LocalMappable.swift in Sources */,
+				ED2E8A342260A9C800E44849 /* LocalWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +349,9 @@
 		};
 		ED2E8A2B2260A5EB00E44849 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C5932C936D0BE70E4BECD0 /* Pods-GKCoreData.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -275,9 +366,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = appcraft.GKCoreData;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkcoredata.lib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,7 +377,9 @@
 		};
 		ED2E8A2C2260A5EB00E44849 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C487890B2892FFEE1C86ECF /* Pods-GKCoreData.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -300,7 +394,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = appcraft.GKCoreData;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gkcoredata.lib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
