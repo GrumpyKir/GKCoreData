@@ -5,7 +5,7 @@ s.ios.deployment_target = '10.0'
 s.name = "GKCoreData"
 s.summary = "CoreData layer"
 s.requires_arc = true
-s.version = "1.0.1"
+s.version = "1.0.2"
 s.license = { :type => "MIT", :file => "LICENSE" }
 s.author = { "Opekishev Kirill" => "grumpykir@gmail.com" }
 s.homepage = "https://github.com/GrumpyKir/GKCoreData"
