@@ -1,19 +1,21 @@
-Pod::Spec.new do |s|
+Pod::Spec.new do |spec|
+	spec.platform = :ios
 
-s.platform = :ios
-s.ios.deployment_target = '10.0'
-s.name = "GKCoreData"
-s.summary = "CoreData layer"
-s.requires_arc = true
-s.version = "1.0.3"
-s.license = { :type => "MIT", :file => "LICENSE" }
-s.author = { "Opekishev Kirill" => "grumpykir@gmail.com" }
-s.homepage = "https://github.com/GrumpyKir/GKCoreData"
-s.source = { :git => "https://github.com/GrumpyKir/GKCoreData.git",
-			 :tag => "#{s.version}" }
-s.frameworks = "UIKit", "CoreData"
-s.dependency 'GKExtensions', '~> 1.1.0'
-s.source_files = "GKCoreData/SourceData/*.swift"
-s.swift_version = "5.0"
+	spec.name = 'GKCoreData'
+	spec.version = '1.0.4'
+	spec.license = { :type => 'MIT', :file => 'LICENSE' }
+	spec.homepage = 'https://github.com/GrumpyKir/GKCoreData'
+	spec.author = { 'Opekishev Kirill' => 'grumpykir@gmail.com' }
+	spec.summary = 'CoreData layer'
+	spec.source = { :git => 'https://github.com/GrumpyKir/GKCoreData.git',
+				 	:tag => '#{s.version}' }
+	spec.swift_version = '5.0'
 
+	spec.ios.deployment_target = '10.0'
+	
+	spec.source_files = 'GKCoreData/SourceData/*.swift'
+	spec.requires_arc = true
+	
+	spec.frameworks = 'UIKit', 'CoreData'
+	spec.dependency 'GKExtensions', '~> 1.1.0'
 end
