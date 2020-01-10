@@ -106,7 +106,7 @@ open class LocalWorker: LocalWorkerInterface {
     
     // MARK: - Module functions
     private func saveMainContext() {
-        self.mainContext.perform {
+        self.mainContext.performAndWait {
             do {
                 try self.mainContext.save()
                 
