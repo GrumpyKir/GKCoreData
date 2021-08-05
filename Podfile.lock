@@ -1,0 +1,16 @@
+PODS:
+  - GKExtensions (1.1.0)
+
+DEPENDENCIES:
+  - GKExtensions (~> 1.1.0)
+
+SPEC REPOS:
+  trunk:
+    - GKExtensions
+
+SPEC CHECKSUMS:
+  GKExtensions: e2336b4ae2a62bfc968fd1a4ced30365ffb3f73b
+
+PODFILE CHECKSUM: d26992f416431150c8bb9902d9879bb5291711d0
+
+COCOAPODS: 1.10.1
